@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Amrit Pradeep Thakur — Marine & Offshore Project Coordinator | Supply Chain & Operations Professional. Based in Doha, Qatar. 9+ years across EPIC projects, vessel logistics, and supply chain operations.">
+<title>Amrit Pradeep Thakur | Marine & Offshore | Supply Chain Professional</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Inter",system-ui,sans-serif;background:#fff;color:#0D1B2A;line-height:1.6}
+:root{
+  --ink:#0D1B2A;--steel:#1E3A52;--horizon:#2B6CB0;--wake:#4A9FD5;
+  --gold:#C8973A;--chalk:#F5F8FB;--border:#CBD8E4;--grey:#4A5568;--white:#fff;
+}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;
+  justify-content:space-between;padding:0 48px;height:64px;
+  background:rgba(13,27,42,0.97);backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(74,159,213,0.2)}
+.nav-brand{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--wake);
+  letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);text-decoration:none;
+  letter-spacing:.04em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--wake)}
+.nav-cta{font-size:13px;font-weight:700;color:var(--ink);background:var(--gold);
+  border:none;border-radius:4px;padding:9px 20px;text-decoration:none;
+  transition:opacity .2s;white-space:nowrap}
+.nav-cta:hover{opacity:.85}
+
+/* HERO */
+.hero{min-height:100vh;background:linear-gradient(155deg,var(--ink) 0%,var(--steel) 55%,#1a4a72 100%);
+  display:flex;align-items:center;padding:120px 48px 80px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;
+  background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234A9FD5' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E")}
+.hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,transparent,var(--wake),var(--gold),var(--wake),transparent);
+  animation:shimmer 4s ease-in-out infinite}
+@keyframes shimmer{0%,100%{opacity:.4}50%{opacity:1}}
+.hero-inner{max-width:1100px;margin:0 auto;width:100%;
+  display:grid;grid-template-columns:1fr 320px;gap:60px;align-items:center;position:relative;z-index:1}
+.eyebrow{font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:500;
+  color:var(--gold);letter-spacing:.16em;text-transform:uppercase;margin-bottom:18px;
+  display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";display:block;width:32px;height:1px;background:var(--gold)}
+h1{font-family:"Playfair Display",serif;font-size:clamp(32px,5vw,54px);
+  font-weight:400;color:#fff;line-height:1.15;margin-bottom:8px}
+h1 em{font-style:normal;color:var(--wake)}
+.hero-role{font-family:"JetBrains Mono",monospace;font-size:12px;
+  color:rgba(255,255,255,.5);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;line-height:1.6}
+.hero-bio{font-size:16px;line-height:1.8;color:rgba(255,255,255,.8);max-width:540px;margin-bottom:30px}
+.hero-bio strong{color:var(--wake);font-weight:600}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn-gold{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;
+  background:var(--gold);color:var(--ink);font-weight:700;font-size:14px;
+  text-decoration:none;border-radius:3px;transition:transform .15s,box-shadow .15s;white-space:nowrap}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(200,151,58,.4)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;
+  border:1.5px solid rgba(74,159,213,.6);color:var(--wake);font-weight:500;
+  font-size:13px;text-decoration:none;border-radius:3px;transition:border-color .2s,color .2s;white-space:nowrap}
+.btn-outline:hover{border-color:var(--wake);color:#fff}
+
+/* PHOTO + ID CARD */
+.id-card{background:rgba(255,255,255,.05);border:1px solid rgba(74,159,213,.2);
+  border-radius:8px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.id-photo{width:100%;display:block;aspect-ratio:3/4;object-fit:cover;object-position:center top}
+.id-card-body{padding:16px 18px;background:rgba(13,27,42,.85);
+  border-top:1px solid rgba(74,159,213,.15)}
+.id-row{display:flex;align-items:flex-start;gap:8px;padding:7px 0;
+  border-bottom:1px solid rgba(255,255,255,.05);font-size:13px}
+.id-row:last-child{border-bottom:none;padding-bottom:0}
+.id-icon{font-size:14px;width:18px;text-align:center;flex-shrink:0;margin-top:1px}
+.id-label{font-family:"JetBrains Mono",monospace;font-size:9px;color:rgba(255,255,255,.4);
+  text-transform:uppercase;letter-spacing:.08em;margin-bottom:1px}
+.id-value{color:rgba(255,255,255,.9);font-size:12px}
+.id-value a{color:var(--wake);text-decoration:none}
+.id-badge{display:inline-block;font-family:"JetBrains Mono",monospace;font-size:9px;
+  font-weight:700;padding:2px 7px;border-radius:2px;letter-spacing:.06em;text-transform:uppercase;
+  background:rgba(200,151,58,.2);color:var(--gold);border:1px solid rgba(200,151,58,.3)}
+
+/* STATS */
+.stats{background:var(--chalk);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stats-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+.stat-cell{padding:28px 20px;border-right:1px solid var(--border);text-align:center}
+.stat-cell:last-child{border-right:none}
+.stat-val{font-family:"Playfair Display",serif;font-size:36px;font-weight:700;
+  color:var(--steel);line-height:1;margin-bottom:4px}
+.stat-val sup{font-size:18px}
+.stat-lbl{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--grey)}
+
+/* SECTIONS */
+section{padding:80px 48px}
+.sec-inner{max-width:1100px;margin:0 auto}
+.sec-head{margin-bottom:48px}
+.sec-eye{font-family:"JetBrains Mono",monospace;font-size:11px;font-weight:500;
+  color:var(--horizon);letter-spacing:.16em;text-transform:uppercase;
+  margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.sec-eye::after{content:"";display:block;width:40px;height:1px;background:var(--horizon);opacity:.5}
+.sec-title{font-family:"Playfair Display",serif;font-size:clamp(24px,3.5vw,38px);
+  font-weight:400;color:var(--ink);line-height:1.2}
+
+/* ABOUT */
+#about{background:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 360px;gap:60px;align-items:start}
+.about-text p{font-size:16px;line-height:1.8;color:var(--grey);margin-bottom:16px}
+.about-text strong{color:var(--ink);font-weight:600}
+.cert-block{background:var(--chalk);border:1px solid var(--border);border-radius:6px;padding:22px}
+.cert-block-title{font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:600;
+  color:var(--horizon);letter-spacing:.12em;text-transform:uppercase;
+  margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.cert-item{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid var(--border)}
+.cert-item:last-child{border-bottom:none;padding-bottom:0}
+.cert-icon{font-size:15px;flex-shrink:0;margin-top:2px}
+.cert-name{font-weight:600;font-size:13px;color:var(--ink)}
+.cert-ref{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--grey);margin-top:2px}
+.cert-valid{font-size:11px;color:var(--gold);font-weight:500;margin-top:2px}
+
+/* EXPERIENCE */
+#experience{background:var(--chalk)}
+.timeline{position:relative}
+.timeline::before{content:"";position:absolute;left:20px;top:8px;bottom:0;
+  width:2px;background:linear-gradient(to bottom,var(--horizon),var(--border))}
+.tl-item{display:grid;grid-template-columns:64px 1fr;margin-bottom:36px}
+.tl-item:last-child{margin-bottom:0}
+.tl-dot{width:12px;height:12px;background:var(--horizon);border:3px solid var(--chalk);
+  border-radius:50%;margin:6px 26px 0;box-shadow:0 0 0 2px var(--horizon)}
+.tl-dot.active{background:var(--gold);box-shadow:0 0 0 2px var(--gold),0 0 16px rgba(200,151,58,.4)}
+.exp-card{background:#fff;border:1px solid var(--border);border-radius:6px;
+  padding:20px 24px;margin-left:8px}
+.exp-hdr{display:flex;justify-content:space-between;align-items:flex-start;
+  margin-bottom:4px;flex-wrap:wrap;gap:6px}
+.exp-co{font-weight:700;font-size:15px;color:var(--ink)}
+.exp-dt{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--grey);white-space:nowrap}
+.exp-loc{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--grey);
+  text-transform:uppercase;margin-bottom:8px}
+.exp-title{font-size:13px;color:var(--horizon);font-weight:600;margin-bottom:10px}
+.exp-body{font-size:14px;line-height:1.7;color:var(--grey)}
+.exp-body ul{padding-left:16px}
+.exp-body li{margin-bottom:4px}
+
+/* SKILLS */
+#skills{background:#fff}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.skill-group{background:var(--chalk);border:1px solid var(--border);border-radius:6px;padding:18px}
+.skill-group-title{font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:600;
+  color:var(--horizon);letter-spacing:.12em;text-transform:uppercase;
+  margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.skill-tag{display:inline-block;background:#fff;border:1px solid var(--border);
+  color:var(--ink);font-size:12px;font-weight:500;padding:3px 9px;
+  border-radius:3px;margin:3px 3px 0 0;line-height:1.4}
+
+/* CV DOWNLOAD */
+#cv-download{background:var(--steel)}
+.dl-inner{max-width:780px;margin:0 auto;text-align:center;padding:64px 48px}
+.dl-title{font-family:"Playfair Display",serif;font-size:clamp(24px,3.5vw,36px);color:#fff;margin-bottom:12px}
+.dl-sub{font-size:15px;color:rgba(255,255,255,.6);max-width:440px;margin:0 auto 32px;line-height:1.7}
+.dl-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-dl{display:inline-flex;align-items:center;gap:10px;padding:13px 28px;
+  background:var(--gold);color:var(--ink);font-weight:700;font-size:15px;
+  text-decoration:none;border-radius:4px;transition:transform .15s,box-shadow .15s}
+.btn-dl:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(200,151,58,.4)}
+.btn-share{display:inline-flex;align-items:center;gap:10px;padding:12px 26px;
+  border:2px solid rgba(255,255,255,.3);color:#fff;font-weight:500;font-size:14px;
+  text-decoration:none;border-radius:4px;cursor:pointer;background:transparent;
+  font-family:"Inter",sans-serif;transition:border-color .2s}
+.btn-share:hover{border-color:rgba(255,255,255,.7)}
+
+/* CONTACT */
+#contact{background:var(--ink);text-align:center}
+#contact .sec-eye{justify-content:center;color:var(--gold)}
+#contact .sec-eye::after{background:var(--gold)}
+.contact-sub{font-size:16px;color:rgba(255,255,255,.6);max-width:460px;
+  margin:12px auto 32px;line-height:1.7}
+.contact-cards{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.c-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+  border-radius:6px;padding:16px 22px;text-align:left;min-width:190px;
+  text-decoration:none;color:inherit;transition:background .2s,border-color .2s}
+.c-card:hover{background:rgba(74,159,213,.12);border-color:var(--wake)}
+.c-label{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--wake);
+  letter-spacing:.12em;text-transform:uppercase;margin-bottom:5px}
+.c-value{font-size:14px;font-weight:600;color:#fff}
+
+/* WHATSAPP FLOATING */
+.wa-float{position:fixed;bottom:28px;right:28px;z-index:999;width:56px;height:56px;
+  border-radius:50%;background:linear-gradient(135deg,#25D366,#128C7E);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(37,211,102,.5);text-decoration:none;
+  transition:transform .2s,box-shadow .2s;animation:pulse-wa 2.5s ease-in-out infinite}
+.wa-float:hover{transform:scale(1.12);box-shadow:0 8px 32px rgba(37,211,102,.65);animation:none}
+@keyframes pulse-wa{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.5)}
+  50%{box-shadow:0 4px 32px rgba(37,211,102,.75),0 0 0 8px rgba(37,211,102,.15)}}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+.wa-tooltip{position:absolute;right:66px;background:var(--ink);color:#fff;
+  font-size:12px;font-weight:500;padding:6px 12px;border-radius:4px;white-space:nowrap;
+  opacity:0;transition:opacity .2s;pointer-events:none;font-family:"Inter",sans-serif}
+.wa-float:hover .wa-tooltip{opacity:1}
+
+/* FOOTER */
+footer{background:#060D15;padding:18px 48px;display:flex;
+  justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;
+  border-top:1px solid rgba(255,255,255,.05)}
+footer p{font-family:"JetBrains Mono",monospace;font-size:11px;
+  color:rgba(255,255,255,.2);letter-spacing:.04em}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
+.reveal.visible{opacity:1;transform:none}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  nav{padding:0 20px}
+  .nav-links{display:none}
+  section{padding:60px 20px}
+  .hero{padding:96px 20px 60px}
+  .hero-inner{grid-template-columns:1fr}
+  .hero-inner>div:last-child{display:none}
+  .about-grid{grid-template-columns:1fr}
+  .skills-grid{grid-template-columns:1fr 1fr}
+  .stats-inner{grid-template-columns:1fr 1fr}
+  .stat-cell{border-bottom:1px solid var(--border)}
+  footer{flex-direction:column;text-align:center}
+}
+@media(max-width:560px){
+  .skills-grid{grid-template-columns:1fr}
+  .hero-actions{flex-direction:column}
+  .dl-buttons{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+
+<!-- WHATSAPP -->
+<a class="wa-float" href="https://wa.me/97451006027" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <span class="wa-tooltip">Chat on WhatsApp</span>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="#home">APT · amritthakur.com</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#cv-download">Download CV</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/97451006027" target="_blank" rel="noopener" class="nav-cta">💬 WhatsApp Me</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">Doha, Qatar · Available Globally</div>
+      <h1>Amrit<br><em>Pradeep Thakur</em></h1>
+      <p class="hero-role">Marine & Offshore Project Coordinator<br>Supply Chain & Operations Professional</p>
+      <p class="hero-bio">
+        9+ years coordinating <strong>offshore EPIC projects, vessel logistics</strong>, and supply chain operations across Qatar, Saudi Arabia, and India. Supporting operators including <strong>North Oil Company, QatarEnergy, and TotalEnergies</strong>. NOC HSE Academy certified. QID transferable.
+      </p>
+      <div class="hero-actions">
+        <a href="Amrit_Thakur_CV_General.pdf" download="Amrit_Thakur_CV.pdf" class="btn-gold">⬇ Download CV</a>
+        <a href="https://wa.me/97451006027" target="_blank" rel="noopener" class="btn-outline">💬 WhatsApp</a>
+        <a href="https://www.linkedin.com/in/amrit-t-ababbb15b" target="_blank" rel="noopener" class="btn-outline">LinkedIn →</a>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="id-card">
+        <img src="data:image/jpeg;base64,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888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888804qjZI8088888888888888884QVM89Qh6U08888888888888880OZ9wxzDxZc88888888888880o+TphZXzTLhz08888888888888sg5CLh5PI0s0Y88888888888884YWscAJdyCgnQ8888888888888saXI7MIFrdntc888888888888888bRTNnphymWU888888888888888n8GrO060/wBn/PPPPPPPPPPPPPPGt5EHczIH1vfPPPPPPPPPPPPPPCOYVWWBfqEHfPPPPPPPPPPPPPPKrrEVmyMfjfPPPPPPPPPPPPPPPPKBalO5FjnfPPPPPPPPPPPPPPPPHz0cLuS8fPPPPPPPPPPPPPPPPPMIoJNOxO/PPPPPPPPPPPPPPPPOJpBUmSu4lfPPPPPPPPPPPPPP+wGLHshWzb9tufvPPPPPPPPNQwQZAAZMxq3lKBTZY+vPPPPP7ZkVuhSFmvhpDR+jdb796OPPC6alznkbuecKyxAJ+CvigUSbeqhq8TcUh6FhX4GZetqRsILRVIwpT2qeHCValhThHqQtSTkirxZ8UeHOJEt24OlkesaiZ6Tff5S2RsS2yvqQ9NB4kpre2Yp48JIFEKYWgC7u2Vz7z/lqpX3fK0mkjJPAQ9dXfNg0qS9/frgMbwZW39+zHOVq/S1lhH+428ABAITlwJZfcJTLW6a0+qLvAZ7VfcRKs3AB1NKrnX/o1QJiXR8sfXd6aAH/ABjexS++qqUtmKKIGEGCGEKGECPwJ9xwF8D0F8H/xAAxEQACAQQBAgQEBgEFAAAAAAAAAQIDEBFBMRIhBDJAUSAiQnETFDBgYYEzcpGhscH/2gAIAQIBAT8A/eeP2Uh8+pVq9Vp9KI1p+4q+NC8TH2ZGtB7M+jWyTwio8sQ7ZYpzXDYvEVFvJHxKehPK9DU8rOlyYqE2Oi0NLJGKbPy7aPyshxcXhlJ5gvQIq+RlKSimyMqsuGooqqovqG+4m000Qlld54JNry1MlSfU0UvIvQup1KqvY4Z+JL3HU7CTMCm+DJy8lV4pRx7i49BFYdZbySMCirdtGEzGCJP/AAr/AFehmsVfuifZiZGE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" alt="Amrit Pradeep Thakur" class="id-photo">
+        <div class="id-card-body">
+          <div class="id-row"><span class="id-icon">📍</span>
+            <div><div class="id-label">Location</div><div class="id-value">Doha, Qatar</div></div></div>
+          <div class="id-row"><span class="id-icon">🛂</span>
+            <div><div class="id-label">Status</div><div class="id-value">QID Holder — Transferable</div></div></div>
+          <div class="id-row"><span class="id-icon">🌍</span>
+            <div><div class="id-label">Availability</div><div class="id-value">Open to roles worldwide</div></div></div>
+          <div class="id-row"><span class="id-icon">📱</span>
+            <div><div class="id-label">WhatsApp / Phone</div>
+              <div class="id-value"><a href="https://wa.me/97451006027">+974 5100 6027</a></div></div></div>
+          <div class="id-row"><span class="id-icon">✉️</span>
+            <div><div class="id-label">Email</div>
+              <div class="id-value"><a href="mailto:thakuramrit@ymail.com">thakuramrit@ymail.com</a></div></div></div>
+          <div class="id-row"><span class="id-icon">✅</span>
+            <div><div class="id-label">HSE Certification</div>
+              <div class="id-value"><span class="id-badge">NOC HSE · Valid Apr 2030</span></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat-cell reveal"><div class="stat-val">9<sup>+</sup></div><div class="stat-lbl">Years Experience</div></div>
+    <div class="stat-cell reveal"><div class="stat-val">$4.5M</div><div class="stat-lbl">Project Portfolio</div></div>
+    <div class="stat-cell reveal"><div class="stat-val">99.4<sup>%</sup></div><div class="stat-lbl">Perfect Order Rate</div></div>
+    <div class="stat-cell reveal"><div class="stat-val">0.04<sup>%</sup></div><div class="stat-lbl">Inventory Discrepancy</div></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-inner">
+    <div class="sec-head"><div class="sec-eye">Background</div>
+      <h2 class="sec-title">Marine coordination meets<br>operations leadership.</h2></div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>At <strong>A to Z Marine & Offshore Services (Sendian Group)</strong>, I coordinate turnkey vessel mobilisation and offshore EPIC projects up to $4.5M per charter lifecycle — supporting QatarEnergy and North Oil Company operations directly. My work covers MWS package preparation, OVID pre-charter inspection scheduling, DRI/HBI hazmat documentation, ISM/ISPS compliance, and P&I Club liaison.</p>
+        <p>Across 9+ years I have led Amazon Ultra-Fast Fresh fulfilment at <strong>99.4% Perfect Order Rate</strong>, managed store operations and cold-chain distribution at Al Dabbagh Group in Saudi Arabia, and handled port gateway logistics in Mumbai at a <strong>0.04% discrepancy rate</strong>. I bring operational depth across marine, offshore, onshore, retail, and express logistics sectors.</p>
+        <p>I hold a <strong>BBA in International Business</strong> (Bharati Vidyapeeth University, 2017) and two active NOC HSE Academy certifications valid to April 2030. Currently pursuing IOSH Managing Safely, CAPM, NEBOSH IGC, and OPITO T-BOSIET.</p>
+      </div>
+      <div class="reveal">
+        <div class="cert-block">
+          <div class="cert-block-title">Active Certifications</div>
+          <div class="cert-item"><span class="cert-icon">🏅</span>
+            <div><div class="cert-name">NOC Life Saving Rules</div>
+              <div class="cert-ref">NOC11804203037452</div><div class="cert-valid">✓ Valid April 2030</div></div></div>
+          <div class="cert-item"><span class="cert-icon">🏅</span>
+            <div><div class="cert-name">IF+ Incident Free Plus</div>
+              <div class="cert-ref">NOC21804203037438</div><div class="cert-valid">✓ Valid April 2030</div></div></div>
+          <div class="cert-block-title" style="margin-top:14px">In Progress / Planned 2026</div>
+          <div class="cert-item"><span class="cert-icon">🎯</span><div><div class="cert-name">IOSH Managing Safely</div><div class="cert-ref">In progress</div></div></div>
+          <div class="cert-item"><span class="cert-icon">🎯</span><div><div class="cert-name">OPITO T-BOSIET</div><div class="cert-ref">Target 2026</div></div></div>
+          <div class="cert-item"><span class="cert-icon">🎯</span><div><div class="cert-name">NEBOSH IGC</div><div class="cert-ref">Planned 2026</div></div></div>
+          <div class="cert-item"><span class="cert-icon">🎯</span><div><div class="cert-name">CAPM · Primavera P6</div><div class="cert-ref">2026 – 2027</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sec-inner">
+    <div class="sec-head"><div class="sec-eye">Career Timeline</div>
+      <h2 class="sec-title">9 years · 3 countries · 5 employers.</h2></div>
+    <div class="timeline">
+
+      <div class="tl-item reveal"><div class="tl-dot active"></div>
+        <div class="exp-card">
+          <div class="exp-hdr"><div class="exp-co">A to Z Marine & Offshore Services (Sendian Group)</div><div class="exp-dt">Mar 2025 – Present</div></div>
+          <div class="exp-loc">📍 Doha, Qatar</div>
+          <div class="exp-title">Marine & Offshore Project Coordinator</div>
+          <div class="exp-body"><ul>
+            <li>Coordinating vessel mobilisation projects up to $4.5M per charter lifecycle — 98.2% on-time delivery across DP-vessel and onshore fabrication operations.</li>
+            <li>Primary liaison for QatarEnergy and North Oil Company; managing daily progress reviews, variation orders, and ISM / IMCA safety standards.</li>
+            <li>DRI / HBI hazmat coordination under IMDG codes; ISM / ISPS compliance and P&I Club liaison across all vessel movements.</li>
+          </ul></div>
+        </div></div>
+
+      <div class="tl-item reveal"><div class="tl-dot"></div>
+        <div class="exp-card">
+          <div class="exp-hdr"><div class="exp-co">Dukan Retailing Co. (Al Dabbagh Group)</div><div class="exp-dt">Jan 2024 – Feb 2025</div></div>
+          <div class="exp-loc">📍 Jeddah, Saudi Arabia</div>
+          <div class="exp-title">Store Manager</div>
+          <div class="exp-body"><ul>
+            <li>Supervised cold-chain distribution and fresh grocery operations; reduced waste and shrinkage by 14% through stock-turn audit controls.</li>
+            <li>Enforced 0.75% shrinkage guardrail; rerouted frozen stock direct-to-store, cutting cold-chain exposure, warehouse costs, and last-mile fuel spend. Achieved 96.8% customer satisfaction.</li>
+          </ul></div>
+        </div></div>
+
+      <div class="tl-item reveal"><div class="tl-dot"></div>
+        <div class="exp-card">
+          <div class="exp-hdr"><div class="exp-co">Amazon Logistics (GSF / UFF)</div><div class="exp-dt">Apr 2021 – Dec 2023</div></div>
+          <div class="exp-loc">📍 Ahmedabad, India</div>
+          <div class="exp-title">Area Team Lead — Ultra-Fast Fresh & Multi-Category Fulfilment</div>
+          <div class="exp-body"><ul>
+            <li>Led 100+ associates across Ultra-Fast Fresh cold-chain, electronics, and apparel (SSD) — 12,000+ daily orders at 99.4% Perfect Order Rate.</li>
+            <li>Raised UPH from 105 to 122 via real-time dashboards; zero-incident safety record across consecutive quarters of 4M / 5S and GEMBA audits.</li>
+          </ul></div>
+        </div></div>
+
+      <div class="tl-item reveal"><div class="tl-dot"></div>
+        <div class="exp-card">
+          <div class="exp-hdr"><div class="exp-co">Spoton Logistics (now part of Delhivery)</div><div class="exp-dt">Jun 2020 – Mar 2021</div></div>
+          <div class="exp-loc">📍 Navi Mumbai, India</div>
+          <div class="exp-title">Operations Officer — Uran Branch, Navi Mumbai Port Corridor</div>
+          <div class="exp-body"><ul>
+            <li>Managed 350+ tons of daily express cargo; directed multi-bay cross-docking and container operations achieving 0.04% inventory discrepancy rate.</li>
+          </ul></div>
+        </div></div>
+
+      <div class="tl-item reveal"><div class="tl-dot"></div>
+        <div class="exp-card">
+          <div class="exp-hdr"><div class="exp-co">Rivigo (now part of Mahindra Logistics)</div><div class="exp-dt">Feb 2017 – Jun 2020</div></div>
+          <div class="exp-loc">📍 Mumbai, India</div>
+          <div class="exp-title">Operations Associate — Express Logistics</div>
+          <div class="exp-body"><ul>
+            <li>Managed 80+ commercial vehicles per shift; cut Vehicle Turn-Around Time (TAT) by 18% and held on-time line-haul dispatch at 96.5%.</li>
+          </ul></div>
+        </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-inner">
+    <div class="sec-head"><div class="sec-eye">Core Competencies</div>
+      <h2 class="sec-title">Marine · Offshore · Logistics<br>Supply Chain · Operations</h2></div>
+    <div class="skills-grid">
+      <div class="skill-group reveal"><div class="skill-group-title">Marine & Offshore</div>
+        <span class="skill-tag">MWS / Rig Moves</span><span class="skill-tag">OVID Inspections</span>
+        <span class="skill-tag">PSV / OSV / FPSO</span><span class="skill-tag">DRI / HBI Hazmat</span>
+        <span class="skill-tag">IMDG / DG Docs</span><span class="skill-tag">ISM / ISPS</span>
+        <span class="skill-tag">P&I Club Liaison</span><span class="skill-tag">Port State Control</span>
+        <span class="skill-tag">IMCA Standards</span><span class="skill-tag">DP Vessel Ops</span></div>
+      <div class="skill-group reveal"><div class="skill-group-title">Supply Chain & Logistics</div>
+        <span class="skill-tag">EPIC / EPCIC Contracting</span><span class="skill-tag">Procurement</span>
+        <span class="skill-tag">Freight Forwarding</span><span class="skill-tag">Import / Export</span>
+        <span class="skill-tag">Incoterms</span><span class="skill-tag">Cross-Dock Ops</span>
+        <span class="skill-tag">Port Logistics</span><span class="skill-tag">Vendor Management</span>
+        <span class="skill-tag">CTR Preparation</span><span class="skill-tag">4M / 5S</span></div>
+      <div class="skill-group reveal"><div class="skill-group-title">Operations & Fulfilment</div>
+        <span class="skill-tag">Pick-Pack-Dispatch</span><span class="skill-tag">Cold-Chain / UFF</span>
+        <span class="skill-tag">Shrinkage Control</span><span class="skill-tag">SLA / KPI Monitoring</span>
+        <span class="skill-tag">Shift Leadership 100+</span><span class="skill-tag">5S / GEMBA</span>
+        <span class="skill-tag">UPH Optimisation</span><span class="skill-tag">Inventory Audits</span></div>
+      <div class="skill-group reveal"><div class="skill-group-title">ERP & Systems</div>
+        <span class="skill-tag">AWS WMS + SQL</span><span class="skill-tag">MS Dynamics 365</span>
+        <span class="skill-tag">Oracle ERP</span><span class="skill-tag">SAP TM</span>
+        <span class="skill-tag">CargoWise</span><span class="skill-tag">Real-Time Dashboards</span></div>
+      <div class="skill-group reveal"><div class="skill-group-title">HSE & Compliance</div>
+        <span class="skill-tag">NOC HSE Certified</span><span class="skill-tag">ISM / ISPS</span>
+        <span class="skill-tag">IOSH Managing Safely</span><span class="skill-tag">NEBOSH IGC</span>
+        <span class="skill-tag">OPITO T-BOSIET</span><span class="skill-tag">PTW / Firewatch</span></div>
+      <div class="skill-group reveal"><div class="skill-group-title">Languages & Region</div>
+        <span class="skill-tag">English — Professional</span>
+        <span class="skill-tag">Hindi — Native</span>
+        <span class="skill-tag">Arabic — Basic</span>
+        <span class="skill-tag">QID Holder</span>
+        <span class="skill-tag">Qatar / Gulf Operations</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CV DOWNLOAD -->
+<section id="cv-download">
+  <div class="dl-inner">
+    <div class="sec-eye" style="justify-content:center;color:var(--gold)">Curriculum Vitae</div>
+    <h2 class="dl-title">Download or share my CV</h2>
+    <p class="dl-sub">One-page PDF — ready to open, print, or forward to a hiring manager instantly.</p>
+    <div class="dl-buttons">
+      <a href="Amrit_Thakur_CV_General.pdf" download="Amrit_Thakur_CV.pdf" class="btn-dl">⬇ Download PDF CV</a>
+      <button class="btn-share" onclick="shareCV()">🔗 Copy CV Link</button>
+    </div>
+    <p style="margin-top:18px;font-size:13px;color:rgba(255,255,255,.3);font-family:'JetBrains Mono',monospace">
+      amritthakur.com · thakuramrit@ymail.com
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-inner">
+    <div class="sec-head" style="text-align:center;margin-bottom:10px">
+      <div class="sec-eye" style="justify-content:center">Get in Touch</div>
+      <h2 class="sec-title" style="color:#fff">Available for roles in Qatar<br>and internationally.</h2></div>
+    <p class="contact-sub">Based in Doha. QID transferable. Responding within 24 hours.</p>
+    <div class="contact-cards">
+      <a href="https://wa.me/97451006027" target="_blank" rel="noopener" class="c-card">
+        <div class="c-label">💬 WhatsApp</div><div class="c-value">+974 5100 6027</div></a>
+      <a href="tel:+97451006027" class="c-card">
+        <div class="c-label">📞 Phone</div><div class="c-value">+974 5100 6027</div></a>
+      <a href="mailto:thakuramrit@ymail.com" class="c-card">
+        <div class="c-label">✉️ Email</div><div class="c-value">thakuramrit@ymail.com</div></a>
+      <a href="https://www.linkedin.com/in/amrit-t-ababbb15b" target="_blank" rel="noopener" class="c-card">
+        <div class="c-label">💼 LinkedIn</div><div class="c-value">amrit-t-ababbb15b</div></a>
+    </div>
+    <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(255,255,255,.2)">
+      Doha, Qatar · AST / GMT+3
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Amrit Pradeep Thakur — amritthakur.com</p>
+  <p>+974 5100 6027 · thakuramrit@ymail.com</p>
+</footer>
+
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e,i) => {
+    if(e.isIntersecting){setTimeout(()=>e.target.classList.add("visible"),i*70);obs.unobserve(e.target);}
+  });
+},{threshold:0.08});
+document.querySelectorAll(".reveal").forEach(el=>obs.observe(el));
+function shareCV(){
+  const url="https://amritthakur.com/Amrit_Thakur_CV_General.pdf";
+  if(navigator.share){navigator.share({title:"Amrit Thakur — CV",url:url});}
+  else{navigator.clipboard.writeText(url).then(()=>alert("CV link copied!"));}
+}
+</script>
+</body>
+</html>
